@@ -1,3 +1,10 @@
+import pip
+k=[]
+for i in k:
+    try:
+        __import__(i)
+    except ImportError:
+        pip.main(['install', i])
 import joblib
 import pandas as pd
 import cloudpickle as cp
