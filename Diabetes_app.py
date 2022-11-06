@@ -116,10 +116,10 @@ def button1():
     image_label1.image=bg_image3
     image_label1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
     image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=550,height=250,corner_radius=8)
-    image_label3.place(relx=0.6, rely=0.2, anchor=tkinter.CENTER)
+    image_label3.place(relx=0.15, rely=0.2, anchor=tkinter.CENTER)
     plot= tkinter.Label(master=top1, image=bg_image)
     plot.image=bg_image
-    plot.place(relx=0.6, rely=0.7, anchor=tkinter.CENTER)
+    plot.place(relx=0.15, rely=0.7, anchor=tkinter.CENTER)
        
     check_box_1 = customtkinter.CTkCheckBox(master=top1,text="T",command=change_mode1)
     check_box_1.grid(row=7, column=5, pady=10, padx=20, sticky="w")
