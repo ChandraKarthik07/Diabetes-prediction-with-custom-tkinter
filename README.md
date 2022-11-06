@@ -12,7 +12,7 @@
 ## App interface(sample video):
 
 <h2 align="center">
-    <img src="" 
+    <img src="https://media.tenor.com/xpxdDELDbtwAAAAM/not-yet-no.gif" 
          alt="Waving hand animated gif"
          height=350"
          width="550" />
