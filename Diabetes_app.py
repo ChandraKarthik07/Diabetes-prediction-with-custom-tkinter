@@ -112,13 +112,13 @@ def button1():
         else:
             customtkinter.set_appearance_mode("dark")
             
-    image_label1 = tkinter.Label(master=top1, image=bg_image)
-    image_label1.image=bg_image
+    image_label1 = tkinter.Label(master=top1, image=bg_image3)
+    image_label1.image=bg_image3
     image_label1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
     image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=550,height=250,corner_radius=8)
     image_label3.place(relx=0.6, rely=0.2, anchor=tkinter.CENTER)
-    plot= tkinter.Label(master=top1, image=bg_image3)
-    plot.image=bg_image3
+    plot= tkinter.Label(master=top1, image=bg_image)
+    plot.image=bg_image
     plot.place(relx=0.6, rely=0.7, anchor=tkinter.CENTER)
        
     check_box_1 = customtkinter.CTkCheckBox(master=top1,text="T",command=change_mode1)
