@@ -1,16 +1,16 @@
-import pip
+from pip._internal import main
+
 import pkg_resources
-l=['tkinter'cloudpickle==2.2.0', 'customtkinter==2.3', 'joblib==1.0.1', 'matplotlib==3.4.3', 'matplotlib-inline==0.1.3', 'numpy==1.21.2', 'packaging==21.0', 'pandas==1.3.3', 'pathlib==1.0.1', 'pickle4==0.0.1', 'pickle5==0.0.11', 'pickles==0.1.1', 'pickleshare==0.7.5', 'Pillow==8.4.0', 'requests==2.28.1', 'scikit-build==0.12.0', 'scikit-learn==1.0', 'scipy==1.7.1', 'seaborn==0.11.2', 'sklearn==0.0', 'urllib2-file==0.2.1', 'urllib3==1.26.12']
+l=['tkinter','cloudpickle', 'customtkinter', 'joblib', 'matplotlib', 'matplotlib-inline', 'numpy', 'packaging', 'pandas', 'pathlib', 'pickle4', 'pickle5', 'pickles', 'pickleshare', 'Pillow', 'requests', 'scikit-build', 'scikit-learn', 'scipy', 'requests','shutil', 'sklearn', 'urllib2-file', 'urllib3']
 for package in l:
     try:
-        dist = pkg_resources.get_distribution(package)
+        dist = pkg_resources.get_distribution(package).version
     except pkg_resources.DistributionNotFound:
-        pip.main(['install',package])
+        main(['install',package])
 import joblib
 import pandas as pd
 import cloudpickle as cp
 import pickle
-import sklearn
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
