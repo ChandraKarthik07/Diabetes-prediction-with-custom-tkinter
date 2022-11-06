@@ -4,7 +4,6 @@ l=['cloudpickle==2.2.0', 'customtkinter==2.3', 'joblib==1.0.1', 'matplotlib==3.4
 for package in l:
     try:
         dist = pkg_resources.get_distribution(package)
-        print("ccg")
     except pkg_resources.DistributionNotFound:
         pip.main(['install',package])
 import joblib
