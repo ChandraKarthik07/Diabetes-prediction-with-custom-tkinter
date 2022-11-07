@@ -11,7 +11,7 @@
    - Install the required packages using 
    `pip install -r requirements.txt`to reduce the code runtime.
    
-   and code of downloading trained model sav files and code for UI here i have used customtkinter(A Modern and Customaizable python UI-Library based on Tkinter).    
+   first time when you run code it takes time to open since installation of dependancies and code of downloading trained model sav files and code for UI here i have used customtkinter(A Modern and Customaizable python UI-Library based on Tkinter).    
 
 ## App interface(sample video):
 
