@@ -1,3 +1,11 @@
+import pip
+import pkg_resources
+l=['tkinter','cloudpickle', 'customtkinter', 'joblib', 'matplotlib', 'matplotlib-inline', 'numpy', 'packaging', 'pandas', 'pathlib', 'pickle4', 'pickle5', 'pickles', 'pickleshare', 'Pillow', 'requests', 'scikit-build', 'scikit-learn', 'scipy', 'requests','shutil', 'sklearn', 'urllib2-file', 'urllib3']
+for package in l:
+    try:
+        dist = pkg_resources.get_distribution(package).version
+    except pkg_resources.DistributionNotFound:
+        pip.main(['install',package])
 import joblib
 import pandas as pd
 import cloudpickle as cp
