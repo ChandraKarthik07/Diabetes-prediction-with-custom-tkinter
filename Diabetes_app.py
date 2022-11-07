@@ -1,6 +1,6 @@
 import pip
 import pkg_resources
-l=['tkinter','cloudpickle', 'customtkinter', 'joblib', 'matplotlib', 'matplotlib-inline', 'numpy', 'packaging', 'pandas', 'pathlib', 'pickle4', 'pickle5', 'pickles', 'pickleshare', 'Pillow', 'requests', 'scikit-build', 'scikit-learn', 'scipy', 'requests','shutil', 'sklearn', 'urllib2-file', 'urllib3']
+l=['tkinter','cloudpickle', 'customtkinter', 'joblib', 'numpy', 'packaging', 'pandas', 'pathlib', 'pickle4', 'pickles', 'pickleshare', 'Pillow', 'requests', 'scikit-build', 'scikit-learn', 'scipy', 'requests','shutil', 'sklearn', 'urllib2-file', 'urllib3']
 for package in l:
     try:
         dist = pkg_resources.get_distribution(package).version
@@ -25,7 +25,6 @@ for i in l:
     if not os.path.exists(i):
         url="https://github.com/ChandraKarthik07/Diabetes-prediction-with-custom-tkinter/blob/main/sav/{}?raw=true".format(i)
         filename, headers = urllib.request.urlretrieve(url, filename="./{}".format(i))
-    print ("exists!")
 
 DTC_model = joblib.load('DTC.sav')
 gauusuianb_model = joblib.load('gauusianb.sav')
@@ -79,7 +78,7 @@ bg_image = ImageTk.PhotoImage(data=raw_data) # <-----
 bg_image1= ImageTk.PhotoImage(data=raw__data)
 bg_image3=ImageTk.PhotoImage(data=raw___data)
 def do_something():
-    tkinter.messagebox.showinfo("ERROR"," buddy you must be dead now " u" \u2620 " u" \u2620...")
+    tkinter.messagebox.showinfo("ERROR"," Buddy you must be dead now " u" \u2620 " u" \u2620...")
 def button1():
     top1=customtkinter.CTkToplevel()
     customtkinter.set_appearance_mode("dark")
@@ -115,7 +114,7 @@ def button1():
     image_label1 = tkinter.Label(master=top1, image=bg_image3)
     image_label1.image=bg_image3
     image_label1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
-    image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=700,height=250,corner_radius=8)
+    image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=600,height=250,corner_radius=8)
     image_label3.place(relx=0.3, rely=0.3, anchor=tkinter.CENTER)
     plot= tkinter.Label(master=top1, image=bg_image)
     plot.image=bg_image
