@@ -16,8 +16,10 @@
 ## App interface(sample video):
 
 <h2 align="center">
-    <img src="https://media.tenor.com/xpxdDELDbtwAAAAM/not-yet-no.gif" 
+    <img src="https://raw.githubusercontent.com/ChandraKarthik07/Diabetes-prediction-with-custom-tkinter/main/sample.gif" 
          alt="Waving hand animated gif"
          height=350"
          width="550" />
 </h2>
+                    
+## -----Thankyou:smile_cat:-----
