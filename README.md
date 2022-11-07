@@ -7,7 +7,11 @@
 
 
 ## Setup:
-   Setup is quite simple all we have just to download the diabetes_app.py and run that code and to there's a ipynb file in my repo contains data cleaning code.Even user doesn't need to install requirements(libraries) through pip manually.This file contains the code of installing modules automatically if it's not installed in system and code of downloading trained model sav files and code for UI here i have used customtkinter(A Modern and Customaizable python UI-Library based on Tkinter)    
+   Setup is quite simple all we have just to download the diabetes_app.py and run that code and to there's a ipynb file in my repo contains data cleaning code.Even user    doesn't need to install requirements(libraries) through pip manually.This file contains the code of installing modules automatically if it's not installed in system      or
+   - Install the required packages using 
+   `pip install -r requirements.txt`to reduce the code runtime.
+   
+   and code of downloading trained model sav files and code for UI here i have used customtkinter(A Modern and Customaizable python UI-Library based on Tkinter).    
 
 ## App interface(sample video):
 
