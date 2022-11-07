@@ -1,16 +1,8 @@
-from pip._internal import main
-
-import pkg_resources
-l=['tkinter','cloudpickle', 'customtkinter', 'joblib', 'matplotlib', 'matplotlib-inline', 'numpy', 'packaging', 'pandas', 'pathlib', 'pickle4', 'pickle5', 'pickles', 'pickleshare', 'Pillow', 'requests', 'scikit-build', 'scikit-learn', 'scipy', 'requests','shutil', 'sklearn', 'urllib2-file', 'urllib3']
-for package in l:
-    try:
-        dist = pkg_resources.get_distribution(package).version
-    except pkg_resources.DistributionNotFound:
-        main(['install',package])
 import joblib
 import pandas as pd
 import cloudpickle as cp
 import pickle
+import sklearn
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -79,7 +71,7 @@ bg_image = ImageTk.PhotoImage(data=raw_data) # <-----
 bg_image1= ImageTk.PhotoImage(data=raw__data)
 bg_image3=ImageTk.PhotoImage(data=raw___data)
 def do_something():
-    tkinter.messagebox.showinfo("ERROR"," 0 levels that means you are not alive anymore " u" \u2620 " u" \u2620...")
+    tkinter.messagebox.showinfo("ERROR"," buddy you must be dead now " u" \u2620 " u" \u2620...")
 def button1():
     top1=customtkinter.CTkToplevel()
     customtkinter.set_appearance_mode("dark")
@@ -115,11 +107,11 @@ def button1():
     image_label1 = tkinter.Label(master=top1, image=bg_image3)
     image_label1.image=bg_image3
     image_label1.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
-    image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=550,height=250,corner_radius=8)
-    image_label3.place(relx=0.15, rely=0.2, anchor=tkinter.CENTER)
+    image_label3 = customtkinter.CTkLabel(master=top1,text="{}\n\n{}\n\n{}\n\n{}".format(k1,k2,k3,k5),width=700,height=250,corner_radius=8)
+    image_label3.place(relx=0.3, rely=0.3, anchor=tkinter.CENTER)
     plot= tkinter.Label(master=top1, image=bg_image)
     plot.image=bg_image
-    plot.place(relx=0.15, rely=0.7, anchor=tkinter.CENTER)
+    plot.place(relx=0.25, rely=0.7, anchor=tkinter.CENTER)
        
     check_box_1 = customtkinter.CTkCheckBox(master=top1,text="T",command=change_mode1)
     check_box_1.grid(row=7, column=5, pady=10, padx=20, sticky="w")
@@ -127,11 +119,10 @@ def button1():
     
     
 def button():
-    if entry.get()==str(0) or entry1.get() == str(0):
+    if entry.get()==str(0) or entry1.get() == str(0)or int(entry.get())>=300 or int(entry1.get()) >= 300:
         do_something()
     elif  len(entry.get())==0:
         tkinter.messagebox.showinfo("ERROR","PLEASE ENTER THE VALUES "u"\U0001F643 "u"\U0001F643")
-
     else:
         X1=float(entry.get())
         Y1=float(entry1.get())
