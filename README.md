@@ -3,11 +3,11 @@
  > Predict Diabetes using Machine Learning. 
 <!-- GETTING STARTED -->
 ## Getting Started:
- This application is made using sklearnMachine Learning libraries and customtkinterfor its graphical UI.various machine learning algorithms used to predict the whether that person is pre-diabetic,diabetic or non-diabetic so this will be label for this case.  and best of those based on the accuracy_score metric will be considered as a final output .
+ This application is made using sklearnMachine Learning libraries and customtkinterfor its graphical UI.Various machine learning algorithms used to predict the whether that person is pre-diabetic,diabetic or non-diabetic.  and best of those based on the accuracy_score metric will be considered as a final output .
 
 
 ## Setup:
-   Setup is quite simple all we have just to download the diabetes_app.py and run that code and to there's a ipynb file in my repo contains data cleaning code.Even user    doesn't need to install requirements(libraries) through pip manually.This file contains the code of installing modules automatically if it's not installed in system      or
+   Setup is quite simple all we have just to download the diabetes_app.py and run that code and there's a ipynb file in my repo contains data cleaning code.Even user doesn't need to install requirements(libraries) through pip manually.This file contains the code of installing modules automatically if it's not installed in system or
    - Install the required packages using 
    `pip install -r requirements.txt`to reduce the code runtime.
    
