@@ -1,4 +1,4 @@
-﻿cloudpickle==2.2.0
+cloudpickle==2.2.0
 customtkinter==2.3
 joblib==1.0.1
 matplotlib==3.4.3
@@ -12,7 +12,7 @@ pickle5==0.0.11
 pickles==0.1.1
 pickleshare==0.7.5
 Pillow==8.4.0
-requests==2.28.1
+requests==2.31.0
 shutil
 requests
 sklearn==0.0
